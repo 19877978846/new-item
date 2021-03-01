@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buffer</title>
+</head>
+
+<body>
+    <div style="height:300px;width:300px;margin:0 auto;">
+        <div id="timer">5秒后进入首页</div>
+        <!-- <img src="images/catBall.gif" alt="" /> -->
+        <h3>拼命加载中，请稍后……</h3>
+    </div>
+
+    <!--js部分-->
+    <script>
+        var t = 5; //自定义时间为5秒
+        setInterval(function () {
+            if (t == 1) {
+                location = './index.html'; //缓冲完成后，页面跳转到首页
+            }
+            t--; //自减，实现倒计时
+            document.getElementById("timer").innerHTML = t + "秒后进入首页";
+        }, 1000); //定时器，每间隔1秒钟调用一次函数
+    </script>
+</body>
+
+</html>

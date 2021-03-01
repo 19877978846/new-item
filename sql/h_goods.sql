@@ -1,0 +1,49 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : a
+Source Server Version : 50714
+Source Host           : localhost:3306
+Source Database       : gree
+
+Target Server Type    : MYSQL
+Target Server Version : 50714
+File Encoding         : 65001
+
+Date: 2020-12-16 19:17:44
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `h_goods`
+-- ----------------------------
+DROP TABLE IF EXISTS `h_goods`;
+CREATE TABLE `h_goods` (
+  `h_goods_id` varchar(255) NOT NULL,
+  `pic` varchar(500) DEFAULT NULL,
+  `goods_name` varchar(1000) DEFAULT NULL,
+  `goods_price` varchar(255) DEFAULT NULL,
+  `goods_num` varchar(255) DEFAULT NULL,
+  `cart_id` varchar(255) DEFAULT NULL,
+  `goods_small_logo` varchar(500) DEFAULT NULL,
+  `goods_small_logo_one` varchar(500) DEFAULT NULL,
+  `goods_small_logo_two` varchar(500) DEFAULT NULL,
+  `goods_small_logo_three` varchar(500) DEFAULT NULL,
+  `cart_id_one` varchar(255) DEFAULT NULL,
+  `cart_id_two` varchar(255) DEFAULT NULL,
+  `goods_describle` varchar(1000) DEFAULT NULL,
+  `buy_num` varchar(255) DEFAULT NULL,
+  `cart_num` varchar(255) DEFAULT NULL,
+  `is_select` varchar(255) DEFAULT NULL,
+  `goods_introduce` varchar(3000) DEFAULT NULL,
+  PRIMARY KEY (`h_goods_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of h_goods
+-- ----------------------------
+INSERT INTO `h_goods` VALUES ('286', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/9/27/02ed8a06-f214-4676-84e0-f91e61474a0d.jpg', '格力蒸汽精洗机 全车精洗 简单高效 GA1403D 380V电源 杀菌洗车机 红色', '60000.00', '100', '生活家电', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/9/21/2501dbf2-f593-4cd3-9439-fa9dfd6968b9.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/2/1/ea40253a-bcf6-4f96-8c4d-6657822fbaa0.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/2/1/a1070291-60bb-4bb6-a129-4fcd952ccc0c.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/2/1/4d8eb180-4d9f-44ff-9931-6da20c083149.jpg', '环境电器\n                            >', '蒸汽洗车机', '节能环保，高温杀菌，全车清洗，简单高效，安全保护，时尚外观', '64', '0', '0', '<div class=\"right_pic\" id=\"right_pic_2\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/5/143c3f0f-56e4-4870-a4d0-087ed91f4df7.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/5/218c42cd-bfce-406d-8100-8ef8b0a03fb0.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/5/e64f0b7d-ad8a-4808-8d48-5f39537d90d4.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/5/510d35de-86a0-4b6f-b724-cbedaac7d54e.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/5/c708369b-753a-488c-83a0-ae2c627a8567.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/5/bee4aa82-d9ba-4c9c-b40b-498efdbf9eb4.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/3/26/9230f747-c3e4-4200-a69f-73a05b7a46e9.jpg\" alt=\"\"></div>');
+INSERT INTO `h_goods` VALUES ('107', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/9/27/cd6d7aa3-812a-4c2a-b56b-9c8803544e72.jpg', '大松IH智能电饭煲 4L 地道煲仔饭 饭香锅巴脆 GDCF-4009C顶 黑+银色 百香煲', '2999.00', '100', '生活家电', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/goods/2020/12/7/24df9d3d-d968-4d08-969b-12c3b8cae4c4.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/24/971ff93f-bd98-42d6-be73-37b856ca81b8.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/24/8d711591-9a82-4471-85c5-2f29e57cf583.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/24/43713cbe-01d5-4add-b30a-34f6d2f9083c.jpg', '厨房小电\n                            >', '电饭煲', '30kPa压力技术，4段IH加热，180度高温，煲仔饭专用内胆，智能WIFI操控', '19497', '0', '0', '<div class=\"right_pic\" id=\"right_pic_2\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/dae5d40f-84ca-4d6e-8e30-c2bb8ff19f05.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/99c783e9-42f6-48bb-85ab-cd87cd496545.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/cf444c04-cab5-4c20-a091-bc162a619c28.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/20a7a246-4de0-428a-9a1d-80850f3cd2cd.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/be4fb99a-a023-4a2b-8f57-4d64a671b359.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/e31b1b6a-9196-40d9-a021-45bf7fb7b60d.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/dacbe0b7-1b9e-4919-9314-d439c2989da8.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/ce36b53d-3e00-46b0-b23b-c977375d27c3.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/e05ea921-9238-4ffa-99de-767f9fb8128a.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/a5a1915c-32a6-430c-a8c5-4c03ce18fd7f.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/7a3ee626-779f-4f70-8279-530df0334517.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/04b8c06c-0ef2-4a56-83d0-c24baefcdcaf.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/790eff1d-d691-41da-b704-ee0d6d11ed67.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/c3ca95dd-6eb1-44bd-9e6f-e627bd35db5f.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/11/3/ce8941ac-b355-4073-b857-86091a60208d.jpg\" alt=\"\"></div>');
+INSERT INTO `h_goods` VALUES ('601', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/9/27/4137c537-5d22-4552-ba15-5bbb954e2ea3.jpg', '格力三代手机 5.99英寸 暗光拍摄 留住色彩的每次跃动 G0335D 烟雨灰', '3600.00', '100', '手机数码', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/f9355dcd-aade-477f-8415-0968f8418c65.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/eb9274d0-018b-46f7-9fe2-72498aee258a.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/f932e740-0029-4873-93a8-6e5b9fc75595.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/eef2698b-f113-4928-b722-b14b99f057a2.jpg', '格力三代手机\n                            >', '谧夜黑', '全高清全面屏，双面玻璃设计，专业双摄，全像素双核对焦，暗光拍摄，AI智慧生活助手，智能短信应用分屏', '799', '0', '0', '<div class=\"right_pic\" id=\"right_pic_2\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/976d389a-65b4-4235-9b2f-63e295d5c4ac.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/29420242-ec7a-4a99-b2bc-e7ff91abcd78.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/a74ccf8b-2793-419b-994a-449a09916b3b.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/c2a1b786-390a-448f-b2d5-ff8ed90f8872.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/f70150af-8ef2-4088-8341-159a41751dcd.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/a53de8c4-67c6-45b5-82e9-259619eef6e7.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/4b97c46c-d78b-4d7b-9b03-b587cf905a64.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/70790bc5-b0ed-4c56-8b70-d7bea0d887cf.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/2013deda-4f4c-4007-b3d2-ff691fdbdc84.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/a1b9ada0-49b9-4f8a-bc6d-fd47c5b3c6a3.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/24/04057e7c-05e0-40de-b3b8-4a76804a7b2d.jpg\" alt=\"\"></div>');
+INSERT INTO `h_goods` VALUES ('480', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/9/30/2a6d1b7c-7ff7-4f65-81e0-6ecf0236123d.jpg', '【新国标】格力•金贝变频冷暖3匹1级能效柜机空调 KFR-72LW/(72572)FNhAa-B1(WIFI)(珍珠白)', '15899.00', '100', '空调', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/goods/2020/10/31/ee5d6ad1-1d02-4da4-8176-fe07acc4447f.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/c4936abc-7cc3-49a3-ba9d-3cdef89b2b42.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/445b8083-b9e8-4fa5-8dce-242b2aeb4822.jpg', 'https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/e94f628f-940a-47d7-b637-cb12d74f7d2e.jpg', '家用空调\n                            >', '柜式空调', 'AI语音控制，56℃净菌自洁，出风格栅便利易拆洗，WIFI智能控制', '3', '0', '0', '<div class=\"right_pic\" id=\"right_pic_2\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/5c21f6ee-16c1-4ad6-b9aa-b2192faa2713.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/87afaf56-bfae-4482-9bcf-62ca36bac932.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/f16af169-f2c3-444d-9cf3-ffef7f99043b.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/6247b765-c24a-48df-a82c-3e70c4c7a83d.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/dbc8e46e-a939-41f9-abcd-90739a013f1e.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/ae226c89-476f-4521-9948-91b3ef7dab5d.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/41503a77-1c6c-46ed-928f-59b409da121d.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/56ae1167-af6c-466b-969b-adf2b63a87b0.jpg\" alt=\"\"><img src=\"https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2020/7/6/18470961-ea6c-4e13-b3df-a01e5f447943.jpg\" alt=\"\"></div>');

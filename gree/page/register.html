@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <style>
+        img:hover {
+            opacity: 1;
+        }
+
+        .register-header {
+            display: flex;
+            height: 110px;
+            background-color: #fff;
+        }
+
+        .register-header img {
+            float: left;
+            height: 80px;
+            margin-top: 10px;
+        }
+
+        .register-header span {
+            float: left;
+            margin-left: 32px;
+            height: 100px;
+            line-height: 100px;
+            color: #747474;
+            font-size: 24px;
+        }
+
+        .register {
+            width: 980px;
+            margin: 14px auto;
+        }
+
+        .register-title {
+            width: 142px;
+            height: 42px;
+            background-color: #fff;
+            padding-top: 8px;
+            box-sizing: border-box;
+            border-top: 2px solid #2daae4;
+            border-left: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
+            text-align: center;
+        }
+
+        .register-title h3 {
+            color: #2daae4;
+            font-weight: bold;
+        }
+
+        .register form {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #e8e8e8;
+            color: #747474;
+            padding-bottom: 66px;
+        }
+
+        .register ul li input {
+            display: block;
+            width: 279px;
+            height: 39px;
+            box-sizing: border-box;
+            line-height: 39px;
+            border: 1px solid #e8e8e8;
+            border-radius: 1px;
+            color: #757575;
+            font-size: 12px;
+            padding-left: 15px;
+        }
+
+        .register ul li {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 210px;
+            margin-top: 30px;
+        }
+
+        .register ul li:first-child {
+            margin-top: 60px;
+        }
+
+        .register ul li>span {
+            position: absolute;
+            right: 785px;
+            line-height: 39px;
+        }
+
+        .register ul li i {
+            position: absolute;
+            left: 520px;
+            top: 12px;
+        }
+
+        .register .correct-i {
+            color: #04be02;
+        }
+
+        .wrong-i {
+            color: #f00056;
+        }
+
+        .register p {
+            margin-top: 40px;
+            margin-left: 210px;
+        }
+
+        .register p input {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .register p a {
+            color: #747474;
+        }
+
+        .register p a:hover {
+            color: #cc0000;
+        }
+
+        .register input[type="submit"] {
+            margin-top: 70px;
+            margin-left: 210px;
+            width: 260px;
+            height: 40px;
+            /* line-height: 40px;
+            text-align: center; */
+            background-color: #cc0000;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="main clearfix">
+            <ul class="h_l">
+                <li><a href="./login.html">登录</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="./register.html">注册</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="#">移动端下载</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="#">卖家移动端下载</a></li>
+            </ul>
+            <ul class="h_r">
+                <li><a href="./index.html">商场首页</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="#">我的订单</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="#">开店申请</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="#">注册分销商</a><i class="iconfont h_vertical_line">&#xe605;</i></li>
+                <li><a href="#"><span class="iconfont">&#xe60e;</span>我的收藏</a><i
+                        class="iconfont h_vertical_line">&#xe605;</i>
+                </li>
+                <li><a href="#"><span class="iconfont">&#xe60d;</span>客服中心</a><i
+                        class="iconfont h_vertical_line">&#xe605;</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="register-header main clearfix">
+        <a href="./index.html"><img src="../img/logo.gif" alt=""></a>
+        <span>| 欢迎注册</span>
+    </div>
+    <div class="register">
+        <div class="register-title">
+            <h3>用户注册</h3>
+        </div>
+        <form>
+            <ul>
+                <li>
+                    <span>手机：</span><input type="text" name="phone" placeholder="请输入手机" required>
+                </li>
+                <li>
+                    <span>用户名：</span><input type="text" name="uname" placeholder="请输入用户名" required>
+                </li>
+                <li>
+                    <span>请设置密码：</span><input type="password" name="pwd1" placeholder="请输入密码" required>
+                </li>
+                <li>
+                    <span>请确认密码：</span><input type="password" name="pwd2" placeholder="请再次输入密码" required>
+                </li>
+            </ul>
+            <p><input type="checkbox" checked>同意<a href="#">《格力官方商城用户注册协议》</a>和<a href="#">《隐私声明》</a></p>
+            <input type="submit" value="同意协议并注册">
+        </form>
+    </div>
+    <div class="footer main">
+        <div class="footer-main clearfix">
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="#">格力境外购买须知</a></dd>
+                <dd><a href="#">商城支付</a></dd>
+                <dd><a href="#">配送服务查询</a></dd>
+                <dd><a href="#">免责声明</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a href="#">服务时效</a></dd>
+                <dd><a href="#">安装/维修</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+            </dl>
+            <dl>
+                <dt>常见问题</dt>
+                <dd><a href="#">空调内机条码获取方法</a></dd>
+                <dd><a href="#">订单常见问题说明</a></dd>
+                <dd><a href="#">空调常见问题说明</a></dd>
+                <dd><a href="#">冰箱常见问题说明</a></dd>
+            </dl>
+            <dl>
+                <dt>相关管理制度</dt>
+                <dd><a href="#">知识产权保护规则</a></dd>
+                <dd><a href="#">严重违法行为平台服务停止制度</a></dd>
+                <dd><a href="#">食品安全自查制度</a></dd>
+                <dd><a href="#">食品安全违法行为制止及报告制度</a></dd>
+                <dd><a href="#">食品安全投诉举报处理制度</a></dd>
+                <dd><a href="#">入网食品生产经营者审查登记制度</a></dd>
+            </dl>
+            <dl>
+                <dt>格力商城资质证明</dt>
+                <dd><a href="#">网络食品交易第三方平台备案凭证</a></dd>
+                <dd><a href="#">增值电信业务经营许可证</a></dd>
+                <dd><a href="#">营业执照</a></dd>
+            </dl>
+        </div>
+        <div class="footer-bottom">
+            <p>珠海格力电器股份有限公司版权所有 粤ICP备05006515号</p>
+            <img src="../img/f-5.png" alt="">
+        </div>
+    </div>
+    <script src="../js/ajax1.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/existUser.js"></script>
+</body>
+
+</html>
